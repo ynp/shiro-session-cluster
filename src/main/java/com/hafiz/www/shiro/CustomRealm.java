@@ -39,10 +39,10 @@ public class CustomRealm extends AuthorizingRealm{
         //获取该用户具有的所有的角色资源(把null换成findResourceUrlById())
         List<String> resourceList = null;
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-        Set<String> allPermissions = new HashSet<>(resourceList);
+        Set<String> allPermissions = new HashSet<String>(resourceList);
         allPermissions.remove("");
         allPermissions.remove(null);
-        List<String> patternPermissions = new ArrayList<>();
+        List<String> patternPermissions = new ArrayList<String>();
         //通配url，以*，或者.*
         if (CollectionUtils.isNotEmpty(allPermissions)) {
             for (String per : allPermissions) {

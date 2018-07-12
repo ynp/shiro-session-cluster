@@ -13,10 +13,10 @@
         $("input[name='btn_logout']").click(function(){
             $.ajax({
                 type:"post",
-                url:"/logout.json",
+                url:"logout.json",
                 success:function(data) {
                     if (data.success) {
-                        window.location.href = "/login.html";
+                        window.location.href = "login.html";
                     } else {
                         alert(data.msg);
                     }

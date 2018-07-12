@@ -19,8 +19,8 @@
         <constructor-arg value="${redis.host}"/>
         <constructor-arg type="int" value="${redis.port}"/>
         <constructor-arg type="int" value="${redis.timeout}"/>
-        <constructor-arg type="java.lang.String" value="${redis.password}"/>
-        <constructor-arg type="int" value="${redis.dbindex}"/>
+<!--         <constructor-arg type="java.lang.String" value="${redis.password}"/>
+        <constructor-arg type="int" value="${redis.dbindex}"/> -->
     </bean>
 
     <bean id="redisClient" class="com.hafiz.www.redis.RedisClient">

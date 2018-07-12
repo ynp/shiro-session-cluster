@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserEntity> getByUserName(String userName) {
         if (userName == null) {
-           return new ArrayList<>();
+           return new ArrayList();
         }
         return mapper.getByUserName(userName);
     }

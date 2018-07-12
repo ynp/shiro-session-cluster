@@ -24,12 +24,12 @@
             }
             $.ajax({
                 type:"post",
-                url:"/login.json",
+                url:"login.json",
                 dataType:"json",
                 data:{"userName":userName, "password":password},
                 success:function(data) {
                     if (data.success) {
-                        window.location.href = "/index.html";
+                        window.location.href = "index.html";
                     } else {
                         alert(data.msg);
                     }
